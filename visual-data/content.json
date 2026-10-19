@@ -1,0 +1,206 @@
+{
+  "site": {
+    "practitionerName": "Dt. Bhavna Bhanushali",
+    "subtitle": "Certified Diabetes Educator & Health Coach",
+    "experience": "10+ Years Experience",
+    "contactEmail": "consult@dtbhavna.com",
+    "primaryPhone": "+91 98200 00000",
+    "signatureStatement": "Real Food. Sustainable Habits. Better Health.",
+    "bookingUrl": "",
+    "vslVideoUrl": ""
+  },
+  "nav": {
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Our Approach", "href": "#approach" },
+      { "label": "FAQs", "href": "#faq" }
+    ],
+    "ctaText": "Book Your Consultation"
+  },
+  "hero": {
+    "eyebrow": "PERSONALISED DIABETES NUTRITION GUIDANCE",
+    "headline": {
+      "main": "Take Control of Your Diabetes",
+      "highlight": "Naturally"
+    },
+    "description": "Build healthier everyday habits with personalised nutrition and lifestyle guidance designed around your individual needs, food preferences, and routine.",
+    "points": [
+      "Personalised guidance",
+      "Practical nutrition advice",
+      "Individual attention"
+    ],
+    "primaryCta": "Book Your Consultation",
+    "secondaryCta": "Watch the Video",
+    "badge": {
+      "title": "Personalised Nutrition & Lifestyle Support",
+      "subtitle": "Evidence-based guidance with Dt. Bhavna"
+    }
+  },
+  "vsl": {
+    "eyebrow": "EDUCATIONAL VIDEO GUIDE",
+    "headline": "Discover a More Practical Approach to Diabetes Management",
+    "description": "Watch the video to understand how personalised nutrition and sustainable lifestyle habits can support your blood sugar management journey.",
+    "placeholderTitle": "Watch: How Personalised Nutrition Supports Blood Sugar Management",
+    "placeholderSubtitle": "10-Minute Video Guide with Dt. Bhavna Bhanushali",
+    "ctaText": "Book Your Consultation",
+    "benefits": [
+      { "title": "Practical food guidance" },
+      { "title": "Sustainable daily habits" },
+      { "title": "Personalised support" }
+    ]
+  },
+  "healthRisks": {
+    "eyebrow": "HEALTH EDUCATION",
+    "headline": "High Blood Sugar Today Can Affect Your Health Tomorrow",
+    "description": "Diabetes is not just about blood sugar readings. When blood sugar remains elevated over time, it can contribute to complications affecting different parts of the body.",
+    "calloutBox": "Understanding your health risks is an important step towards making informed decisions about your care.",
+    "impacts": [
+      {
+        "title": "Heart Health",
+        "desc": "Uncontrolled diabetes can increase the risk of cardiovascular disease and stroke."
+      },
+      {
+        "title": "Kidney Health",
+        "desc": "Persistently high blood sugar can damage the kidneys over time."
+      },
+      {
+        "title": "Vision Health",
+        "desc": "Diabetes can damage the blood vessels in the eyes and affect vision."
+      },
+      {
+        "title": "Nerve Health",
+        "desc": "Diabetes-related nerve damage may cause tingling, numbness, or pain, particularly in the feet."
+      },
+      {
+        "title": "Wound Healing",
+        "desc": "Diabetes can affect healing and increase the risk of certain infections.",
+        "fullWidth": true
+      }
+    ]
+  },
+  "support": {
+    "eyebrow": "PRACTICAL & SUSTAINABLE",
+    "headline": "Take Control of Your Daily Habits with the Right Guidance",
+    "description": "Build healthier habits with personalised guidance on nutrition, daily movement, stress management, and sleep to support better blood sugar management and long-term well-being.",
+    "subtext": "Everyday habits matter. The goal is to develop practical routines that fit your lifestyle and support your individual health needs.",
+    "ctaText": "Start Your Personalised Consultation",
+    "areas": [
+      {
+        "step": "1",
+        "title": "Personalised Nutrition Guidance",
+        "badge": "Core Foundation",
+        "tag": "Individualised Care",
+        "desc": "Understand food choices and build practical eating habits that support blood sugar management.",
+        "wide": true
+      },
+      {
+        "step": "2",
+        "title": "Lifestyle Planning",
+        "desc": "Develop realistic daily routines that fit your lifestyle and health needs."
+      },
+      {
+        "step": "3",
+        "title": "Movement Guidance",
+        "desc": "Explore appropriate ways to include physical activity in your everyday life."
+      },
+      {
+        "step": "4",
+        "title": "Stress & Sleep Support",
+        "desc": "Learn strategies to build healthier sleep routines and manage everyday stress."
+      },
+      {
+        "step": "5",
+        "title": "Ongoing Guidance & Support",
+        "desc": "Get help navigating challenges, reviewing your progress, and building consistency."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "YOUR HEALTH COACH",
+    "headline": "Meet Dt. Bhavna Bhanushali",
+    "paragraphs": [
+      "Bhavna Bhanushali is a Certified Diabetes Educator and Health Coach with 10+ years of experience, dedicated to helping people improve their overall health and achieve better blood sugar management through practical nutrition and sustainable lifestyle changes.",
+      "Her approach focuses on supporting blood sugar management, weight management, and healthier everyday habits without extreme dieting or starvation.",
+      "Through the Reset Blueprint, she guides individuals towards a more balanced lifestyle with a focus on real food, personalised nutrition, and long-term well-being."
+    ],
+    "signature": "“Real Food. Sustainable Habits. Better Health.”",
+    "commitments": [
+      "No extreme dieting or starvation",
+      "Personalised to your food preferences",
+      "Supportive individual communication",
+      "Complements your primary medical care"
+    ],
+    "ctaText": "Book Your Consultation"
+  },
+  "blueprintSteps": {
+    "eyebrow": "THE RESET BLUEPRINT PROCESS",
+    "headline": "Your Journey Towards Healthier Everyday Habits",
+    "description": "A clear, collaborative approach to help you build habits that last.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Step 1 — Book a Consultation",
+        "desc": "Discuss your health goals, current lifestyle, and nutritional needs."
+      },
+      {
+        "number": "02",
+        "title": "Step 2 — Understand Your Needs",
+        "desc": "Explore practical nutrition and lifestyle approaches relevant to your individual circumstances."
+      },
+      {
+        "number": "03",
+        "title": "Step 3 — Build Sustainable Habits",
+        "desc": "Work towards realistic routines that support your ongoing health and well-being."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS & CLARITY",
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Can diabetes be managed naturally through nutrition and lifestyle changes?",
+        "answer": "Nutrition and lifestyle changes can support blood sugar management and overall health. The right approach depends on your individual health needs and should complement medical care."
+      },
+      {
+        "question": "Do I need to follow a strict diet or starve myself?",
+        "answer": "No. The focus is on practical, balanced eating habits and sustainable lifestyle changes rather than extreme dieting or starvation."
+      },
+      {
+        "question": "Can I reduce belly fat while working on my blood sugar levels?",
+        "answer": "Healthy eating, regular physical activity, and consistent lifestyle habits can support weight management and better blood sugar control. Results vary from person to person."
+      },
+      {
+        "question": "Will I receive a personalised nutrition plan?",
+        "answer": "The guidance focuses on your individual needs, food preferences, daily routine, and health goals to help you build practical and sustainable habits. Explain the exact deliverables during the consultation."
+      },
+      {
+        "question": "How can I get started with the Reset Blueprint?",
+        "answer": "You can book a consultation to discuss your health goals, current lifestyle, and nutritional needs and understand how personalised guidance may help you."
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "TAKE THE FIRST STEP",
+    "headline": "Ready to Build Healthier Everyday Habits?",
+    "paragraphs": [
+      "Take the first step towards a more personalised approach to nutrition and lifestyle management.",
+      "Discuss your health goals with Dt. Bhavna Bhanushali and explore practical ways to support your well-being."
+    ],
+    "ctaText": "Book Your Consultation"
+  },
+  "footer": {
+    "quickLinks": [
+      { "label": "Home", "href": "#" },
+      { "label": "About", "href": "#about" },
+      { "label": "Our Approach", "href": "#approach" },
+      { "label": "FAQs", "href": "#faq" }
+    ],
+    "policies": [
+      { "label": "Privacy Policy", "href": "#privacy" },
+      { "label": "Terms and Conditions", "href": "#terms" }
+    ],
+    "copyright": "© 2026 Dt. Bhavna Bhanushali. All Rights Reserved.",
+    "disclaimer": "Health Disclaimer: The information on this website is for educational purposes only and is not a substitute for individualised medical advice, diagnosis, or treatment. Diabetes care should be guided by a qualified healthcare professional. Do not stop or change prescribed medication without consulting your treating clinician."
+  }
+}

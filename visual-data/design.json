@@ -1,0 +1,43 @@
+{
+  "colors": {
+    "primary": "#1677C8",
+    "primaryHover": "#1264a9",
+    "primaryLight": "#EAF6FF",
+    "primarySubtle": "#F4FAFF",
+    "primaryBorder": "#D9EAF7",
+    "accent": "#58A9E8",
+    "heading": "#173653",
+    "body": "#526579",
+    "white": "#FFFFFF"
+  },
+  "fonts": {
+    "heading": "Plus Jakarta Sans",
+    "body": "Inter"
+  },
+  "typography": {
+    "heroHeadline": {
+      "fontFamily": "Plus Jakarta Sans",
+      "fontWeight": 800,
+      "desktopSize": "3rem",
+      "mobileSize": "1.875rem"
+    },
+    "sectionHeadline": {
+      "fontFamily": "Plus Jakarta Sans",
+      "fontWeight": 800,
+      "desktopSize": "2.25rem",
+      "mobileSize": "1.5rem"
+    },
+    "bodyText": {
+      "fontFamily": "Inter",
+      "fontWeight": 400,
+      "desktopSize": "1.125rem",
+      "mobileSize": "1rem"
+    }
+  },
+  "components": {
+    "primaryButton": "px-7 py-3.5 bg-[#1677C8] hover:bg-[#1264a9] text-white font-semibold text-base rounded-xl transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer active:scale-98",
+    "secondaryButton": "px-6 py-3.5 bg-white hover:bg-[#F4FAFF] text-[#173653] border border-[#D9EAF7] hover:border-[#B9E3FF] font-semibold text-base rounded-xl transition-all duration-200 cursor-pointer shadow-2xs",
+    "eyebrowBadge": "text-xs sm:text-sm font-bold tracking-wider text-[#1677C8] uppercase bg-[#EAF6FF] px-3.5 py-1.5 rounded-full border border-[#D9EAF7]",
+    "card": "bg-white p-6 sm:p-7 rounded-2xl border border-[#D9EAF7] shadow-2xs hover:border-[#B9E3FF] transition-all"
+  }
+}
