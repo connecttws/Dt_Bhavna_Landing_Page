@@ -16,7 +16,7 @@ export function AboutSection({
   onOpenBooking,
 }: AboutSectionProps) {
   return (
-    <section id="about" className="py-16 sm:py-24 bg-white scroll-mt-14">
+    <section id="about" className="py-8 sm:py-12 bg-white scroll-mt-14">
       <div className="max-w-[1160px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Professional Portrait Frame */}
@@ -24,8 +24,8 @@ export function AboutSection({
             {/* Soft sky-blue decorative shape behind image */}
             <div className="absolute -inset-4 bg-[#EAF6FF] rounded-[26px] rotate-1 pointer-events-none" />
 
-            <div className="relative w-full max-w-sm sm:max-w-md bg-white border border-[#D9EAF7] rounded-[22px] overflow-hidden shadow-md p-3">
-              <div className="relative aspect-[4/5] rounded-[18px] overflow-hidden bg-gradient-to-b from-[#F4FAFF] to-[#EAF6FF] flex items-center justify-center">
+            <div className="relative w-full max-w-sm sm:max-w-md bg-white border border-slate-200/90 rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_12px_40px_rgb(0,0,0,0.08)] p-3.5">
+              <div className="relative aspect-[4/5] rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-b from-[#F4FAFF] to-[#EAF6FF] flex items-center justify-center">
                 {/* Authentic Clinical Practitioner Visual */}
                 <svg
                   className="w-full h-full object-cover"
@@ -113,10 +113,12 @@ export function AboutSection({
           {/* Right Column: Introduction, Philosophy & Signature Statement */}
           <div className="lg:col-span-7 space-y-6">
             <div>
-              <span className="text-xs sm:text-sm font-bold tracking-wider text-[#1677C8] uppercase bg-[#EAF6FF] px-3.5 py-1.5 rounded-full border border-[#D9EAF7]">
-                {data.eyebrow}
-              </span>
-              <h2 className="mt-3 text-2xl sm:text-4xl font-extrabold text-[#173653] tracking-tight">
+              <div className="mb-4 sm:mb-5">
+                <span className="inline-flex items-center text-xs sm:text-sm font-bold tracking-wider text-[#1677C8] uppercase bg-[#EAF6FF] px-4 py-1.5 rounded-full border border-[#D9EAF7]">
+                  {data.eyebrow}
+                </span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-[#173653] tracking-tight">
                 {data.headline}
               </h2>
             </div>
@@ -128,7 +130,7 @@ export function AboutSection({
             </div>
 
             {/* Signature Statement */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#F4FAFF] border border-[#D9EAF7]">
+            <div className="p-5 sm:p-6 rounded-2xl sm:rounded-3xl bg-[#F4FAFF] border border-slate-200/90 shadow-[0_4px_20px_rgb(0,0,0,0.04)]">
               <p className="text-lg sm:text-xl font-extrabold text-[#173653] tracking-tight">
                 {data.signature}
               </p>

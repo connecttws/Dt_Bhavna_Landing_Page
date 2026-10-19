@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { VSLSection } from "@/components/VSLSection";
 import { HealthRisksSection } from "@/components/HealthRisksSection";
 import { SupportSection } from "@/components/SupportSection";
 import { AboutSection } from "@/components/AboutSection";
@@ -30,13 +29,6 @@ export default function Home() {
     setIsBookingOpen(true);
   };
 
-  const handleScrollToVideo = () => {
-    const el = document.getElementById("vsl");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white text-[#526579] font-sans antialiased selection:bg-[#EAF6FF] selection:text-[#173653] pb-14 sm:pb-0">
       {/* ================= SECTION 1: HEADER & NAVIGATION ================= */}
@@ -47,51 +39,45 @@ export default function Home() {
       />
 
       <main>
-        {/* ================= SECTION 2: HERO SECTION ================= */}
+        {/* ================= SECTION 2: HERO SECTION WITH VSL VIDEO FRAME & CTA ================= */}
         <Hero
           data={contentData.hero}
-          onOpenBooking={handleOpenBooking}
-          onScrollToVideo={handleScrollToVideo}
-        />
-
-        {/* ================= SECTION 3: VSL VIDEO SECTION ================= */}
-        <VSLSection
-          data={contentData.vsl}
           site={contentData.site}
+          vslData={contentData.vsl}
           onOpenBooking={handleOpenBooking}
           onOpenVideoModal={() => setIsVideoOpen(true)}
         />
 
-        {/* ================= SECTION 4: HEALTH RISKS ================= */}
+        {/* ================= SECTION 3: HEALTH RISKS ================= */}
         <HealthRisksSection data={contentData.healthRisks} />
 
-        {/* ================= SECTION 5: PERSONALISED SUPPORT & LIFESTYLE ================= */}
+        {/* ================= SECTION 4: PERSONALISED SUPPORT & LIFESTYLE ================= */}
         <SupportSection
           data={contentData.support}
           onOpenBooking={handleOpenBooking}
         />
 
-        {/* ================= SECTION 6: MEET DT. BHAVNA BHANUSHALI ================= */}
+        {/* ================= SECTION 5: MEET DT. BHAVNA BHANUSHALI ================= */}
         <AboutSection
           data={contentData.about}
           site={contentData.site}
           onOpenBooking={handleOpenBooking}
         />
 
-        {/* ================= SECTION 7: RESET BLUEPRINT JOURNEY ================= */}
+        {/* ================= SECTION 6: RESET BLUEPRINT JOURNEY ================= */}
         <BlueprintStepsSection data={contentData.blueprintSteps} />
 
-        {/* ================= SECTION 8: FREQUENTLY ASKED QUESTIONS ================= */}
+        {/* ================= SECTION 7: FREQUENTLY ASKED QUESTIONS ================= */}
         <FaqSection data={contentData.faq} />
 
-        {/* ================= SECTION 9: FINAL CONSULTATION CTA ================= */}
+        {/* ================= SECTION 8: FINAL CONSULTATION CTA ================= */}
         <FinalCtaSection
           data={contentData.finalCta}
           onOpenBooking={handleOpenBooking}
         />
       </main>
 
-      {/* ================= SECTION 10: FOOTER ================= */}
+      {/* ================= SECTION 9: FOOTER ================= */}
       <Footer data={contentData.footer} site={contentData.site} />
 
       {/* ================= MOBILE STICKY ACTION BAR ================= */}

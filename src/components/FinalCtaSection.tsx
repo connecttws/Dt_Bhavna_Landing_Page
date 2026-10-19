@@ -14,11 +14,13 @@ export function FinalCtaSection({
   onOpenBooking,
 }: FinalCtaSectionProps) {
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-b from-[#EAF6FF] to-[#F4FAFF] border-t border-[#D9EAF7] text-center">
-      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-        <span className="text-xs sm:text-sm font-bold tracking-wider text-[#1677C8] uppercase bg-white px-3.5 py-1.5 rounded-full border border-[#D9EAF7] shadow-2xs">
-          {data.eyebrow}
-        </span>
+    <section className="py-10 sm:py-14 bg-gradient-to-b from-[#EAF6FF] to-[#F4FAFF] border-t border-[#D9EAF7] text-center">
+      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-5">
+        <div className="inline-flex justify-center mb-4 sm:mb-5">
+          <span className="text-xs sm:text-sm font-bold tracking-wider text-[#1677C8] uppercase bg-white px-4 py-1.5 rounded-full border border-[#D9EAF7] shadow-2xs">
+            {data.eyebrow}
+          </span>
+        </div>
 
         <h2 className="text-2xl sm:text-4xl lg:text-4xl font-extrabold text-[#173653] tracking-tight leading-tight">
           {data.headline}
