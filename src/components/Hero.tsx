@@ -112,13 +112,8 @@ export function Hero({
             <ArrowRight className="w-4 h-4" />
           </button>
 
-          {/* Line after CTA */}
-          <p className="text-xs sm:text-sm text-[#526579] max-w-xl mx-auto leading-relaxed pt-1">
-            {data.description}
-          </p>
-
           {/* Micro Assurance & Supporting Points */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-[11px] sm:text-xs text-[#173653] font-medium pt-0.5">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-[11px] sm:text-xs text-[#173653] font-medium pt-1">
             {data.points.map((point) => (
               <div key={point} className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#1677C8] shrink-0" />

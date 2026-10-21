@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState, useRef } from "react";
 import { Apple, Clock, Flame, Moon, LifeBuoy, ArrowRight } from "lucide-react";
 import { SupportData } from "@/types";
 import contentData from "../../visual-data/content.json";
@@ -13,6 +14,18 @@ export function SupportSection({
   data = contentData.support,
   onOpenBooking,
 }: SupportSectionProps) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const scrollLeft = scrollRef.current.scrollLeft;
+      const cardWidth = scrollRef.current.clientWidth * 0.82;
+      const index = Math.round(scrollLeft / cardWidth);
+      setActiveIndex(Math.min(Math.max(index, 0), 4));
+    }
+  };
+
   return (
     <section
       id="approach"
@@ -37,10 +50,14 @@ export function SupportSection({
           </p>
         </div>
 
-        {/* Enhanced Premium Cards with Curved Edges, Borders & Deep Black Shading */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6">
-          {/* 1. Wider Feature Block: Personalised Nutrition Guidance */}
-          <div className="md:col-span-12 bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 hover:-translate-y-1 transition-all duration-300 group">
+        {/* Carousel on Mobile (peeking next card) + Grid on Desktop */}
+        <div
+          ref={scrollRef}
+          onScroll={handleScroll}
+          className="flex md:grid md:grid-cols-12 gap-4 sm:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-smooth pb-4 pt-1 -mx-4 sm:-mx-6 md:mx-0 scroll-pl-5 sm:scroll-pl-6 md:scroll-pl-0 scrollbar-none"
+        >
+          {/* 1. Feature Block: Personalised Nutrition Guidance */}
+          <div className="w-[80vw] sm:w-[84vw] md:w-auto md:col-span-12 shrink-0 md:shrink snap-start ml-5 sm:ml-6 md:ml-0 bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 transition-all duration-300 flex flex-col justify-between group">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
               <div className="flex items-start gap-4 sm:gap-5">
                 <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-[#EAF6FF] to-[#D9EAF7] text-[#1677C8] flex items-center justify-center shrink-0 border border-[#D9EAF7] shadow-xs group-hover:scale-105 transition-transform duration-300">
@@ -67,8 +84,8 @@ export function SupportSection({
             </div>
           </div>
 
-          {/* 2. Medium Block: Lifestyle Planning */}
-          <div className="md:col-span-6 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          {/* 2. Block: Lifestyle Planning */}
+          <div className="w-[80vw] sm:w-[84vw] md:w-auto md:col-span-6 shrink-0 md:shrink snap-start bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#EAF6FF] to-[#D9EAF7] text-[#1677C8] flex items-center justify-center mb-4 border border-[#D9EAF7] shadow-xs group-hover:scale-105 transition-transform duration-300">
                 <Clock className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -82,8 +99,8 @@ export function SupportSection({
             </div>
           </div>
 
-          {/* 3. Medium Block: Movement Guidance */}
-          <div className="md:col-span-6 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          {/* 3. Block: Movement Guidance */}
+          <div className="w-[80vw] sm:w-[84vw] md:w-auto md:col-span-6 shrink-0 md:shrink snap-start bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#EAF6FF] to-[#D9EAF7] text-[#1677C8] flex items-center justify-center mb-4 border border-[#D9EAF7] shadow-xs group-hover:scale-105 transition-transform duration-300">
                 <Flame className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -97,8 +114,8 @@ export function SupportSection({
             </div>
           </div>
 
-          {/* 4. Smaller Block: Stress & Sleep Support */}
-          <div className="md:col-span-6 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          {/* 4. Block: Stress & Sleep Support */}
+          <div className="w-[80vw] sm:w-[84vw] md:w-auto md:col-span-6 shrink-0 md:shrink snap-start bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#EAF6FF] to-[#D9EAF7] text-[#1677C8] flex items-center justify-center mb-4 border border-[#D9EAF7] shadow-xs group-hover:scale-105 transition-transform duration-300">
                 <Moon className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -112,8 +129,8 @@ export function SupportSection({
             </div>
           </div>
 
-          {/* 5. Smaller Block: Ongoing Guidance & Support */}
-          <div className="md:col-span-6 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          {/* 5. Block: Ongoing Guidance & Support */}
+          <div className="w-[80vw] sm:w-[84vw] md:w-auto md:col-span-6 shrink-0 md:shrink snap-start mr-5 sm:mr-6 md:mr-0 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_18px_40px_rgb(0,0,0,0.12)] hover:border-[#1677C8]/40 transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#EAF6FF] to-[#D9EAF7] text-[#1677C8] flex items-center justify-center mb-4 border border-[#D9EAF7] shadow-xs group-hover:scale-105 transition-transform duration-300">
                 <LifeBuoy className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -128,11 +145,23 @@ export function SupportSection({
           </div>
         </div>
 
+        {/* Mobile Carousel Indicators */}
+        <div className="flex md:hidden items-center justify-center gap-2 pt-2 pb-1">
+          {[0, 1, 2, 3, 4].map((i) => (
+            <span
+              key={i}
+              className={`h-1.5 rounded-full transition-all duration-300 ${
+                activeIndex === i ? "w-6 bg-[#1677C8]" : "w-1.5 bg-[#D9EAF7]"
+              }`}
+            />
+          ))}
+        </div>
+
         {/* Centred CTA below section */}
-        <div className="mt-10 sm:mt-12 text-center">
+        <div className="mt-8 sm:mt-12 text-center">
           <button
             onClick={onOpenBooking}
-            className="px-8 py-3.5 bg-[#1677C8] hover:bg-[#1264a9] text-white font-semibold text-base rounded-xl transition-all duration-200 shadow-md hover:shadow-xl inline-flex items-center justify-center gap-2 cursor-pointer active:scale-98"
+            className="w-full sm:w-auto px-8 py-3.5 bg-[#1677C8] hover:bg-[#1264a9] text-white font-semibold text-base rounded-xl transition-all duration-200 shadow-md hover:shadow-xl inline-flex items-center justify-center gap-2 cursor-pointer active:scale-98"
           >
             <span>{data.ctaText}</span>
             <ArrowRight className="w-4 h-4" />
